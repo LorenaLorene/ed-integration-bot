@@ -1,15 +1,15 @@
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from jira import JIRA
-import os
+# from jira import JIRA
+# import os
 
 
-PASSWORD = os.getenv('JIRA_PASSWORD')
-USERNAME = os.getenv('JIRA_USERNAME')
+# PASSWORD = os.getenv('JIRA_PASSWORD')
+# USERNAME = os.getenv('JIRA_USERNAME')
 
-jira = JIRA()
-auth_jira = JIRA(auth=(USERNAME, PASSWORD))
+# jira = JIRA()
+# auth_jira = JIRA(auth=(USERNAME, PASSWORD))
 
 
 @api_view(['GET'])
